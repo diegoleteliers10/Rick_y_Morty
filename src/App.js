@@ -36,6 +36,7 @@ function App() {
          <div className='container'>
             <Routes>
                <Route path='/home' element={<Cards characters={characters} Close={onClose}/>} />
+               <Route path='/' element={<Cards characters={characters} Close={onClose}/>} />
                <Route path='/about' element={<About/>}/>
                <Route path='/detail/:id' element={<Detail id={characters}/>}/>
             </Routes>
