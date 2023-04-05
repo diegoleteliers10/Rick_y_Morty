@@ -5,9 +5,11 @@ export default function Card(props) {
       <div className={style.carta}>
          <button className={style.close} onClick={props.onClose}>X</button>
          <img src={props.image} alt={props.name} className={style.imRick}/>
+
          <Link to={`/detail/${props.id}`}>
             <h2 className={style.nombre}>{props.name}</h2>
          </Link>
+         
          <div className={style.gridConteiner}>
             <h2 className={style.status}>{props.status}</h2>
             <h2>{props.species}</h2>
