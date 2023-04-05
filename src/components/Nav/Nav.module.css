@@ -1,0 +1,47 @@
+.navbar{
+  height: 3rem;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(113, 193, 67, 1) 85%, rgba(1, 156, 79, 1) 100%);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  box-shadow: 0px 10px 20px 5px #019C4F;
+  border: 1px solid #019C4F ;
+}
+
+img{
+  width: 8rem;
+}
+
+.searchBar{
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+}
+
+.Home,.About{
+  background-color: #00B2C8;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 15%;
+  border: none;
+}
+
+
+.contBut{
+  padding-top: 0.4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+.imgLink{
+  cursor: pointer;
+  background: none;
+  border: none;
+}

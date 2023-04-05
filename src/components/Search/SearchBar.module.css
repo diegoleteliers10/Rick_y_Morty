@@ -1,0 +1,29 @@
+.buttonNav {
+  padding-top: 3px;
+  width: 20rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input{
+  background-color: #00B2C8;
+  border-radius: 10px;
+  border-inline:unset;
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 20px #00B2C8;
+  padding-inline: 10px;
+  outline-style: none;
+}
+
+.but1,
+.but2{
+  position: relative;
+  bottom: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: x-large;
+  color: #000000;
+  -webkit-text-stroke: 1.5px #00B2C8;
+}

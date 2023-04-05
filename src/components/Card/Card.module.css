@@ -1,0 +1,62 @@
+
+
+.carta{
+  margin: 20px;
+  padding-top: 3rem;
+  width: 23rem;
+  height: 23rem;
+  background-image: url(../imagenes/portal_rick-removebg-preview.png);
+  background-size:23rem;
+  background-repeat: no-repeat;
+}
+
+
+.imRick{
+  position: relative;
+  right: 5px;
+  bottom: 16px;
+  border-radius: 30%;
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+}
+
+h2{
+  -webkit-text-stroke: 0.3px #00B2C8;
+  text-shadow: 0px 0px 30px #00B2C8;
+  font-size: large;
+  color: black;
+}
+
+.close{
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+  display: flex;
+  font-size: large;
+  color: black;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+
+
+.nombre{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: -14rem;
+}
+
+.gridConteiner{
+  position: relative;
+  top: -5.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: -25px;
+
+}
+
+.gridConteiner > h2 {
+  font-size: medium;
+}
