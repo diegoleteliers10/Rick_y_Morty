@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 
 const Nav= (props)=>{
-
   return (
     <nav className={style.navbar}>
 
@@ -20,6 +19,8 @@ const Nav= (props)=>{
         <button className={style.About}>
           <Link className={style.links} to='/about'>About</Link>
         </button>
+
+        <button className={style.logOut} onClick={props.logOut}>Log Out</button>
         
         
       </div>

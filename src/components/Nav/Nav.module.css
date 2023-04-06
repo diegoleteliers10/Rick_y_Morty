@@ -18,19 +18,25 @@ img{
   padding-right: 2rem;
 }
 
-.Home,.About{
+.Home,.About,.logOut{
   background-color: #00B2C8;
   width: 4rem;
   height: 2rem;
   border-radius: 15%;
   border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px #024323
+}
+
+.logOut{
+  font-size: 1.1rem;
 }
 
 
 .contBut{
   padding-top: 0.4rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   column-gap: 1rem;
 }
 
