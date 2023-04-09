@@ -6,8 +6,9 @@
 
 body{
    background-image: url(./wp3172265.jpg);
-   background-repeat: none;
-   background-size:cover;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
 .App {
    text-align: center;
