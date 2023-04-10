@@ -62,11 +62,9 @@ function App() {
 
       <div className='App'>
 
-         {isLocation? (
-            <Form prop={login}/>
-         ) : (
-            <>
-            <Nav characters={characters} onSearch= {onSearch} logOut={logout} />
+         {isLocation? 
+            <Form prop={login}/> : <Nav characters={characters} onSearch= {onSearch} logOut={logout} />
+         }
             <div className='container'>
                <Routes>
                   <Route path='/home' element={<Cards characters={characters} Close={onClose}/>} />
@@ -74,9 +72,6 @@ function App() {
                   <Route path='/detail/:id' element={<Detail id={characters}/>}/>
                </Routes>
             </div>
-            </>
-            )
-         }
          
       </div>
    );
