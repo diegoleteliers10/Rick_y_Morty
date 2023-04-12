@@ -17,8 +17,6 @@ export default function Cards(props) {
                image={personaje.image}
                onClose={()=> props.Close(personaje.id)}
             />
-
-
       )
       
    });

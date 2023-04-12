@@ -21,7 +21,10 @@ const Nav= (props)=>{
         </button>
 
         <button className={style.logOut} onClick={props.logOut}>Log Out</button>
-        
+
+        <button className={style.Fav}>
+          <Link className={style.linkFav} to='/favorite'>Favorites</Link>
+        </button>
         
       </div>
       <div className={style.searchBar}>
