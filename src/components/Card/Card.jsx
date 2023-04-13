@@ -41,24 +41,25 @@ const Card = (props) => {
           🤍
         </button>
       )}
-      <button className={style.close} onClick={() => { 
-      handleFavorite();
-      onClose();
-      }}>
-        X
-      </button>
       <img src={image} alt={name} className={style.imRick} />
 
-      <Link to={`/detail/${id}`}>
+      <Link className={style.Hylinks} to={`/detail/${id}`}>
         <h2 className={style.nombre}>{name}</h2>
       </Link>
 
       <div className={style.gridConteiner}>
         <h2 className={style.status}>{status}</h2>
-        <h2>{species}</h2>
+        <h2 className={style.species}>{species}</h2>
         <h2 className={style.gender}>{gender}</h2>
-        <h2>{origin}</h2>
+        <h2 className={style.origin}>{origin}</h2>
+
       </div>
+        <button className={style.close} onClick={() => { 
+          handleFavorite();
+          onClose();
+          }}>
+        X
+        </button>
     </div>
   )
 }
