@@ -14,10 +14,10 @@ const About= ()=>{
           </div>
           
           <div className={style.myDetail}>
-            <h2 className={style.thisH2}>STATUS| NOT EXTINCT</h2>
-            <h2 className={style.thisH2}>GENDER| MEN</h2>
-            <h2 className={style.thisH2}>SPECIE| HUMAN</h2>
-            <h2 className={style.thisH2}>ORIGIN| CHILEAN</h2>
+            <h2 className={style.statusAbout}>STATUS| NOT EXTINCT</h2>
+            <h2 className={style.genderAbout}>GENDER| MEN</h2>
+            <h2 className={style.specieAbout}>SPECIE| HUMAN</h2>
+            <h2 className={style.originAbout}>ORIGIN| CHILEAN</h2>
           </div>
         </section>
       </section>

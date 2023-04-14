@@ -1,6 +1,7 @@
 .contenedor{
   display: grid;
   grid-template-columns: auto auto auto;
+  margin-top: 2rem;
 }
 
 .carta1{
@@ -39,7 +40,7 @@
 
 .imRick1 {
   position: relative;
-  bottom: 4.4rem;
+  bottom: 3rem;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 0;
@@ -56,13 +57,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  bottom: 5rem;
+  bottom: 3.2rem;
   color: #000000;
 }
 
 .gridConteiner1 {
   position: relative;
-  bottom: 5rem;
+  bottom: 3.6rem;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: -25px;

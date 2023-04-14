@@ -1,5 +1,5 @@
 .characH1{
-  -webkit-text-stroke: 0.3px #00B2C8;
+  -webkit-text-stroke: 0.3px #019C4F;
     text-shadow: 0px 0px 30px #00B2C8;
     font-size: 5rem;
     color: black;
@@ -7,14 +7,19 @@
 
 .contCharacter{
   margin: auto;
-  padding-top: 0.5rem;
+  padding-top: 0rem;
   border-top: none;
   display: grid;
   grid-template-columns: auto auto;
+  height: 36.7rem;
 }
 
 .chaH2{
     font-size: 2.5rem;
+    font-size: 2.3rem;
+    text-shadow: 0px 0px 30px #019C4F;
+    color: black;
+    -webkit-text-stroke: 0.3px #00B2C8
 }
 
 .imCha{
