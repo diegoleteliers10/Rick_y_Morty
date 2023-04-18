@@ -9,7 +9,6 @@ http.createServer((req,res)=>{
   if(req.url.includes('/rickandmorty/character')){
 
     const id= parseInt(req.url.split('/').pop())
-    console.log(id)
     const character= data.find(c=>c.id===id)
     res.writeHead(200, {'Content-Type': 'application/json'});
     return res.end(JSON.stringify(character))
