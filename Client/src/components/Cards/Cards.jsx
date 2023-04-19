@@ -13,7 +13,7 @@ export default function Cards(props) {
                status={personaje.status}
                species={personaje.species}
                gender={personaje.gender}
-               origin={personaje.origin.name}
+               origin={personaje.origin}
                image={personaje.image}
                onClose={()=> props.Close(personaje.id)}
             />

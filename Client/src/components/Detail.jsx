@@ -22,7 +22,7 @@ useEffect(() => {
 
   const renderOrigin= (origin)=>{
     if(origin){
-      return origin.name
+      return origin
     }
     else{
       return null
