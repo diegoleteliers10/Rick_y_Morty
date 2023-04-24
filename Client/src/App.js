@@ -41,14 +41,17 @@ function App() {
    const [characters, setCharacters]= React.useState([])
 
    const onSearch= (id)=>{
-      axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
-      if (data.name) {
-         setCharacters((oldChars) => [...oldChars, data]);
-      } else {
-         window.alert('¡No hay personajes con este ID!');
-         }
+      axios(`http://localhost:3001/rickandmorty/character/${id}`)
+      .then(({ data }) => {
+         if (data.name) {
+            setCharacters((oldChars) => [...oldChars, data]);
+         } else {
+            window.alert('¡No hay personajes con este ID!');
+            }
       });
    }
+
+   //ver problema con onSearch
 
    const onClose=(id)=>{
       const distintos = characters.filter(personaje=> personaje.id !== id);

@@ -4,8 +4,6 @@ const PORT = 3001;
 
 const router = require('./routes/index')
 
-server.use(express.json())
-
 server.use((req, res, next) => {
    res.header('Access-Control-Allow-Origin', '*');
    res.header('Access-Control-Allow-Credentials', 'true');
@@ -20,6 +18,7 @@ server.use((req, res, next) => {
    next();
 });
 
+server.use(express.json())
 server.use('/rickandmorty', router);
 
 server.listen(PORT, () => {
