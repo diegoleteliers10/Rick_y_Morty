@@ -7,6 +7,7 @@ import { useState } from "react";
 
 const Favorites = (props)=>{
 
+
   const {myFavorites}= useSelector(state=> state)
   const [aux,setAux]=useState(false);
   const dispatch = useDispatch()
