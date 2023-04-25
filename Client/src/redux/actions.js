@@ -5,26 +5,39 @@ import axios from "axios";
 // ACTION | addFav
 export const addFav = (character) => {
    const endpoint = 'http://localhost:3001/rickandmorty/fav';
-   return (dispatch) => {
-      axios.post(endpoint, character).then(({ data }) => {
+   return async(dispatch) => {
+      try{
+         const {data}= await axios.post(endpoint, character)
          return dispatch({
             type: ADD_FAV,
-            payload: data,
+            payload: data
          });
-      });
-   };
+      }
+      catch(error){
+         console.log(error)
+      }
+   }
+
 };
 
 export const removeFav = (id) => {
-   const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
-   return (dispatch) => {
-      axios.delete(endpoint).then(({ data }) => {
-         return dispatch({
+   const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+   return async(dispatch) => {
+      try{
+         const response= await axios.delete(endpoint);
+         console.log(response.data)
+         dispatch({
             type: REMOVE_FAV,
-            payload: data,
-      });
-      });
-   };
+            payload: response.data
+         })
+      }
+      catch(error){
+         return {
+            type:Error,
+            payload:error
+         }
+      }
+   }
 };
 
 export const filterCards= (gender) =>{

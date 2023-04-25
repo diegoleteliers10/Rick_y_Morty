@@ -17,14 +17,18 @@ function App() {
    let [access,setAccess]= useState(false)
 
 
-   function login(userData) {
-      const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
-      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-         const { access } = data;
+   async function login(userData) {
+      try {
+         const { email, password } = userData;
+         const URL = 'http://localhost:3001/rickandmorty/login/';
+         const response= await axios(URL + `?email=${email}&password=${password}`)
+         const { access } = response.data;
          setAccess(access);
          access && navigate('/home');
-      });
+      }
+      catch(error){
+         window.alert('No se pudo iniciar sesion');
+      }
    }
 
    function logout(userData){
@@ -40,15 +44,19 @@ function App() {
 
    const [characters, setCharacters]= React.useState([])
 
-   const onSearch= (id)=>{
-      axios(`http://localhost:3001/rickandmorty/character/${id}`)
-      .then(({ data }) => {
-         if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
-         } else {
-            window.alert('¡No hay personajes con este ID!');
-            }
-      });
+   async function onSearch(id){
+     try{
+      const response= await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+      const {data} = response
+      if (data.name) {
+         setCharacters((oldChars) => [...oldChars, data]);
+      } else {
+         window.alert('¡No hay personajes con este ID!');
+      }
+     } 
+     catch(error){
+      window.alert('No se pudo encontrar la base de datos');
+     }
    }
 
    //ver problema con onSearch
