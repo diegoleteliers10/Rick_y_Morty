@@ -59,7 +59,6 @@ function App() {
      }
    }
 
-   //ver problema con onSearch
 
    const onClose=(id)=>{
       const distintos = characters.filter(personaje=> personaje.id !== id);

@@ -13,3 +13,13 @@ body{
 .App {
    text-align: center;
 }
+
+::-webkit-scrollbar{
+   width: 8px;
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+   background: rgb(147, 145, 145);
+   height: 5px;
+}

@@ -24,7 +24,7 @@ export default function SearchBar(props) {
    }
 
    const clickRandom= ()=>{
-      let newNumber= Math.floor(Math.random()*5)
+      let newNumber= Math.floor(Math.random()*826)+1
       if(personajes.find(persona=>persona.id===newNumber)){
          alert('Este personaje ya se encuentra en la lista')
       }else {
