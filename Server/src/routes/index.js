@@ -6,6 +6,9 @@ const postFav= require('../controllers/postFav');
 
 const router= require('express').Router();
 
+router.get('/log', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+});
 router.get('/character/:id', getCharById);
 router.get('/login', login);
 router.post('/login', postUser);
